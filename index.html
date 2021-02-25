@@ -1,0 +1,37 @@
+<!--
+ ________ __ __ __ __                      _____                    
+|  |  |  |__|  |  |__|.---.-.--------.    |     \.---.-.-----.-----.
+|  |  |  |  |  |  |  ||  _  |        |    |  --  |  _  |     |     |
+|________|__|__|__|__||___._|__|__|__|    |_____/|___._|__|__|__|__|
+https://www.linkedin.com/public-profile/in/william-dann-a82299182                                                                   
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <title>Function Revolver</title>
+    <!-- p5.js import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form>
+        Between x=,
+        <input type="number" id="lowBound_input" value="0"> 
+        and x=
+        <input type="number" id="highBound_input" value="4">
+
+        <br><br>
+        where
+        fx = <input id="fx_input" type="text"   value="2 - x/2"> 
+        <br>
+        Wrap fx around the x-axis.
+        <br><br>
+
+        <input id="goButton"  type="button" value="Graph Function" onclick='updateFunc()'>
+    </form>
+
+    <script src="script.js"></script>
+    <br><br>
+    click and draw to rotate
+</body>
