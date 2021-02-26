@@ -29,11 +29,11 @@ function draw()
     drawGrid();
     
     
+    rotateX(millis() / 2000);
     drawFunction(fx, 'rgba(255, 0, 0, 1)'); 
 
-    rotateX(millis() / 2000);
 
-    drawFunctionStrips(fx);
+    // drawFunctionStrips(fx);
 }
 
 function updateFunc()
@@ -89,7 +89,7 @@ function drawFunction(func, color, subdiv=4)
     stroke(color);
 
     let lastPoint;
-    for (let x = bounds[0][0]; x <= bounds[0][1]; x += 1/subdiv)
+    for (let x = fxBounds[0]; x <= fxBounds[1]; x += 1/subdiv)
     {
         let y           = evalFunc(func, x);
         let screenPoint = [x * gridScale, -y * gridScale];
